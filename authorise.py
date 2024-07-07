@@ -17,6 +17,9 @@ logging.basicConfig(level=logging.INFO,
 def authenticate_gmail():
     try:
         creds = None
+        if not os.path.exists('credentials.json'):
+            logging.error("credentials.json not available.")
+            return None
         if os.path.exists('token.json'):
             creds = Credentials.from_authorized_user_file('token.json', SCOPES)
         if not creds or not creds.valid:
