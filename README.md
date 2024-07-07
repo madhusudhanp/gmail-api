@@ -17,7 +17,7 @@ python3 fetch_emails.py
 ```
 #### 5. To process the emails which are stored in the table
 ```
-Import the postman collection and make a call with the rules in the body.
+Import the postman collection from the project files and make a call with the rules in the body.
 ```
 #### Running Unit Tests
 ```
