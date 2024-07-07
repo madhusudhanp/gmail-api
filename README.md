@@ -26,5 +26,5 @@ pytest test.py
 ```
 #### Generate Code Coverage Report
 ```
-pytest --cov --cov-report=html test.py
+pytest --cov -cov-report=html test.py
 ```
