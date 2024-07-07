@@ -10,10 +10,6 @@ pip3 install -r requirements.txt
 ```
 python3 app.py
 ```
-#### 4. Running the Flask Application
-```
-python3 app.py
-```
 **_NOTE:_** The Flask application will start running on http://localhost:5000.
 
 #### Running Unit Tests
