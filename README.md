@@ -18,6 +18,7 @@ python3 fetch_emails.py
 #### 5. To process the emails which are stored in the table
 ```
 Import the postman collection from the project files and make a call with the rules in the body.
+Add the username and password in the Authorization which you will get in the response of step 4.
 ```
 #### Running Unit Tests
 ```
