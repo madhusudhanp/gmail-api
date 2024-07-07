@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "bdeedd00-dd4b-4224-acf1-4faa5145ffb2",
+		"name": "gmail api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19359557"
+	},
+	"item": [
+		{
+			"name": "gmail_api_process_email",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "yourpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "youremailid@dot.com",
+							"type": "string"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"predicate\": \"All\",\n    \"rules\": [\n        {\n            \"conditions\": [\n                {\"field\": \"subject\", \"predicate\": \"contains\", \"value\": \"livable\"}\n            ],\n            \"actions\": [\"move_message\"]\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/process_emails/process",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"process_emails",
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
