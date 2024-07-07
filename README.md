@@ -11,7 +11,14 @@ pip3 install -r requirements.txt
 python3 app.py
 ```
 **_NOTE:_** The Flask application will start running on http://localhost:5000.
-
+#### 4. To fetch the emails from the gmail account and store it in table
+```
+python3 fetch_emails.py
+```
+#### 5. To process the emails which are stored in the table
+```
+Import the postman collection and make a call with the rules in the body.
+```
 #### Running Unit Tests
 ```
 pytest test.py
