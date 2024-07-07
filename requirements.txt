@@ -1,0 +1,13 @@
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+mysql-connector-python
+python-dotenv
+python-dateutil
+flask
+flask-restx
+bcrypt
+pytest
+pytest-mock
+pytest-cov

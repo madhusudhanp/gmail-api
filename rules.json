@@ -1,0 +1,18 @@
+{
+    "predicate": "All",
+    "rules": [
+        {
+            "conditions": [
+                {"field": "from", "predicate": "contains", "value": "no-reply@accounts.google.com"},
+                {"field": "message", "predicate": "contains", "value": "Security"}
+            ],
+            "actions": ["mark_as_read", "move_message"]
+        },
+        {
+            "conditions": [
+                {"field": "date", "predicate": "less_than", "value": 1, "units": "months"}
+            ],
+            "actions": ["mark_as_unread"]
+        }
+    ]
+}
