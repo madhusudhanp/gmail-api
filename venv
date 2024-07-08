@@ -1,0 +1,4 @@
+MY_DB_USER='gmail_api'
+MY_DB_PASSWORD='gmail_api'
+MY_DB_NAME='gmail_api_project'
+MYSQL_HOST='localhost'
